@@ -1,3 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+heading {
+  color: rgb(40,40,40);
+  margin: 60px;
+}
 h1 {
-  color: red;
+  text-align: center;
+  padding-bottom: 40px;
+}
+section {
+  border: 1px solid black;
+  flex: 0 0 30%;
+  position: relative;
+  background-color: #ddd;
+
+}
+/* For the layout I use FlexBox. Float is't a little bit */
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+.content {
+  padding: 40px 10px;
+}
+.title {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  border: 1px solid black;
+  padding: 4px 45px;
+}
+.title-1 { background-color: #e091b8;}
+.title-2 { background-color: #d02b2b; color: white;}
+.title-3 { background-color: #e6dd70;}
+@media screen and (min-width:768px) and (max-width:991px) {
+  .section1, .section2{ flex: 0 0 46%; }
+  .section3 { flex:0 0 96%; margin-top: 25px;}
+  .container { flex-wrap: wrap;}
+}
+@media screen and (max-width: 767px){
+  .container { flex-direction: column;}
+  section {flex: 0 0 100%; margin: 25px 20px;}
+
+
 }
