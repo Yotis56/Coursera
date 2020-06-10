@@ -4,6 +4,8 @@ body {
   background-color: #61122f;
   font-family: Oxygen;
 }
+/* Header Styles */
+
 #header-nav {
   background-color: #f6b319;
   border-radius: 0;
@@ -58,14 +60,6 @@ body {
   border: 1px solid #61122f;
 
 }
-@media screen and (max-width: 1100px) {
-  #logo-img{
-    background: url('../images/restaurant-logo_large.png') no-repeat;
-    background-size: cover;
-    width: 100px;
-    height: 100px;
-    margin: 5px 5px 5px 0;
-  }
   .navbar-brand h1 {font-size: 3.3vw;}
   .navbar-brand p {font-size: 1.8vw;}
   #navbarContent a span { font-size: 1.2em;}
@@ -74,7 +68,6 @@ body {
 }
 #call-btn{
   background-color: #f6b319;
-
   padding: 10px;
   Margin: 20px 20px 5px 20px;
   border: solid 2px white;
@@ -86,9 +79,46 @@ body {
   font-size: 3.5vw;
 }
 #xs-deliver{ font-size: 2vw; }
+
+/* Main Content Styles */
+
 #main-content{
   margin: 15px 25px;
+}
+#main-content .container-fluid {
   box-shadow: 0 0 50px #3f0c1f;
   border: 2px solid #3f0c1f;
+  margin-bottom: 20px; 
 }
-#main-content div {padding: 0;}
+#main-content .container-fluid {padding: 0;}
+
+#menu-tile, #specials-tile, #map-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3f0c1f;
+  overflow: hidden;
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+  box-shadow: 0 1px 5px 1px #ccc;
+}
+
+/* Media Queries for responsive */
+
+@media screen and (max-width: 1100px) {
+  #logo-img{
+    background: url('../images/restaurant-logo_large.png') no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+  }
+}
+@media screen and (min-width: 992px){
+  #main-content .container-fluid{
+    background: url('../images/jumbotron_1200.jpg');
+    height: 800px;
+    background-size: cover;
+  }
+}
