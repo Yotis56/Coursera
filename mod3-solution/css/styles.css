@@ -144,6 +144,30 @@ testimonials p:nth-child(2){margin-top: 25px}
 @media screen and (max-width: 576px) {#xs-deliver{ font-size: 3.5vw;} #call-btn a {font-size: 5vw;}.navbar-brand h1 {font-size: 5vw;}.navbar-brand p {font-size: 2.8vw;}}
 
 hr {color: white;}
+
+/* Menu categories styles */
+.category-tile{
+  position: relative;
+  border: 2px solid #3f0c1f;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+}
+.category-tile span {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #FFF;
+  opacity: .8;
+}
+.category-tile:hover{box-shadow: 0 1px 5px 1px #CCC;}
+#menu-categories-title + div {margin-bottom: 50px;}
+
 /* Media Queries for responsive */
 
 @media screen and (max-width: 1100px) {
@@ -161,4 +185,7 @@ hr {color: white;}
     height: 800px;
     background-size: cover;
   }
+}
+@media screen and (max-width: 479px){
+  .col-xxs-12 {flex: 1 1 100%; }
 }
