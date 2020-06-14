@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
-
+<!-- Header -->
     <header>
       <nav class="navbar navbar-light navbar-expand-lg" id="header-nav">
         <div class="container-fluid" id="navbar-container-div">
@@ -23,13 +23,13 @@
               <p><img src="./images/star-k-logo.png" alt="Kosher certification"><span> Kosher certified</span></p>
             </div>
           </div>
-
+          <!-- toggle Button -->
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
           </button>
-
+          <!-- Navigation bar -->
           <div class="collapse navbar-collapse " id="navbarContent">
             <div class="navbar-nav navbar-right">
-              <a class="nav-item nav-link" href="menu-categories.html"><img src="./images/bootstrap-icons-1.0.0-alpha4/restaurant-menu.svg" class="menu-sign" alt="" width="20" height="20"><br class="d-none d-lg-block"> Menu</a>
+              <a class="nav-item nav-link active" href="menu-categories.html"><img src="./images/bootstrap-icons-1.0.0-alpha4/restaurant-menu.svg" class="menu-sign" alt="" width="20" height="20"><br class="d-none d-lg-block"> Menu</a>
               <a class="nav-item nav-link" href="#"><img src="./images/bootstrap-icons-1.0.0-alpha4/info-circle-fill.svg" class="info-sign" alt="" width="20" height="20"><br class="d-none d-lg-block"> About</a>
               <a class="nav-item nav-link" href="menu-categories.html"><img src="./images/bootstrap-icons-1.0.0-alpha4/star-fill.svg" class="star-sign" alt="" width="20" height="20"><br class="d-none d-lg-block"> Awards</a>
               <div class="nav-item d-none d-lg-block" id="phone"> <a class="nav-link" href="tel:410-602-5008" ><span>410-602-5008</span></a>* We Deliver</div>
@@ -38,45 +38,80 @@
         </div>
       </nav>
     </header>
+    <!-- Call Button -->
     <div class="d-lg-none" id="call-btn">
       <a class="btn" href="tel:410-602-5008">
         <svg class="bi bi-phone" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11 1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/><path fill-rule="evenodd" d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>410-602-5008</a>
     </div>
     <div class="text-center d-lg-none" id="xs-deliver">* We deliver</div>
-
+<!-- main content -->
     <div class="container-fluid" id="main-content">
-      <h2 id="menu-categories-title" class="text-center">Menu categories.</h2>
-      <div class="text-center">Substiuting white rice with brown rice or fried rice after 3:00 pm will be $1.50 for a pint and $2.50 for a quart.</div>
+      <h2 id="menu-categories-title" class="text-center">Lunch Menu</h2>
+      <div class="text-center">Lunch is not served until 1:00 pm.</div>
       <section class="row">
-        <div class="col-md-3 col-sm-4 col-6 col-xxs-12">
-          <a href="single-category.html"> <div class="category-tile"><img src="images/menu/B/B.jpg" alt="Lunch" width="200" height="200"><span>Lunch</span></div></a>
+        <div class="menu-item-tile col-md-6">
+          <div class="row menu-item">
+            <div class="col-sm-5">
+              <div class="menu-item-photo">
+                <div>D01</div>
+                <img class="img-fluid" src="images/menu/B/B-1.jpg" alt="Item" width="250" height="150">
+              </div>
+              <div class="menu-item-price">$10.95 <span> (pint)</span> $14.95 <span>(quart)</span></div>
+            </div>
+            <div id="menu-item-description" class="col-sm-7">
+              <h3 class="menu-item-title">Wunton</h3>
+              <p class="menu-item-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint debitis vero est dolores quibusdam, quod mollitia voluptatum. Ducimus, corporis quidem.</p>
+            </div>
+          </div>
+          <hr class="d-sm-none">
+          <div class="row menu-item">
+            <div class="col-sm-5">
+              <div class="menu-item-photo">
+                <div>D02</div>
+                <img class="img-fluid" src="images/menu/B/B-10.jpg" alt="Item" width="250" height="150">
+              </div>
+              <div class="menu-item-price">$12.00 <span> (pint)</span> $16.00 <span>(quart)</span></div>
+            </div>
+            <div id="menu-item-description" class="col-sm-7">
+              <h3 class="menu-item-title">Orange Chicken</h3>
+              <p class="menu-item-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint debitis vero est dolores quibusdam, quod mollitia voluptatum. Ducimus, corporis quidem.</p>
+            </div>
+          </div>
+          <hr class="d-sm-none">
         </div>
-        <div class="col-md-3 col-sm-4 col-6 col-xxs-12">
-          <a href="single-category.html"> <div class="category-tile"><img src="images/menu/B/B.jpg" alt="Lunch" width="200" height="200"><span>Lunch</span></div></a>
+        <div class="menu-item-tile col-md-6">
+          <div class="row menu-item">
+            <div class="col-sm-5">
+              <div class="menu-item-photo">
+                <div>D03</div>
+                <img class="img-fluid" src="images/menu/C/C-12.jpg" alt="Item" width="250" height="150">
+              </div>
+              <div class="menu-item-price">$10.95 <span> (pint)</span> $14.95 <span>(quart)</span></div>
+            </div>
+            <div id="menu-item-description" class="col-sm-7">
+              <h3 class="menu-item-title">Wok vegetables with Chicken</h3>
+              <p class="menu-item-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint debitis vero est dolores quibusdam, quod mollitia voluptatum. Ducimus, corporis quidem.</p>
+            </div>
+          </div>
+          <hr class="d-sm-none">
+          <div class="row menu-item">
+            <div class="col-sm-5">
+              <div class="menu-item-photo">
+                <div>D04</div>
+                <img class="img-fluid" src="images/menu/Sp/Sp-2.jpg" alt="Item" width="250" height="150">
+              </div>
+              <div class="menu-item-price">$12.00 <span> (pint)</span> $16.00 <span>(quart)</span></div>
+            </div>
+            <div id="menu-item-description" class="col-sm-7">
+              <h3 class="menu-item-title">Noodles with Beef</h3>
+              <p class="menu-item-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint debitis vero est dolores quibusdam, quod mollitia voluptatum. Ducimus, corporis quidem.</p>
+            </div>
+          </div>
+          <hr class="d-sm-none">
         </div>
-        <div class="col-md-3 col-sm-4 col-6 col-xxs-12">
-          <a href="single-category.html"> <div class="category-tile"><img src="images/menu/B/B.jpg" alt="Lunch" width="200" height="200"><span>Lunch</span></div></a>
-        </div>
-        <div class="col-md-3 col-sm-4 col-6 col-xxs-12">
-          <a href="single-category.html"> <div class="category-tile"><img src="images/menu/B/B.jpg" alt="Lunch" width="200" height="200"><span>Lunch</span></div></a>
-        </div>
-        <div class="col-md-3 col-sm-4 col-6 col-xxs-12">
-          <a href="single-category.html"> <div class="category-tile"><img src="images/menu/B/B.jpg" alt="Lunch" width="200" height="200"><span>Lunch</span></div></a>
-        </div>
-        <div class="col-md-3 col-sm-4 col-6 col-xxs-12">
-          <a href="single-category.html"> <div class="category-tile"><img src="images/menu/B/B.jpg" alt="Lunch" width="200" height="200"><span>Lunch</span></div></a>
-        </div>
-        <div class="col-md-3 col-sm-4 col-6 col-xxs-12">
-          <a href="single-category.html"> <div class="category-tile"><img src="images/menu/B/B.jpg" alt="Lunch" width="200" height="200"><span>Lunch</span></div></a>
-        </div>
-        <div class="col-md-3 col-sm-4 col-6 col-xxs-12">
-          <a href="single-category.html"> <div class="category-tile"><img src="images/menu/B/B.jpg" alt="Lunch" width="200" height="200"><span>Lunch</span></div></a>
-        </div>
-
       </section>
-
     </div>
-
+<!-- Footer -->
     <footer class="panel-footer">
       <div class="container-fluid">
         <div class="row">
